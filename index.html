@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Москва - Суздаль, 15-17 мая 2026</title>
+  <style>
+    :root {
+      --ink: #202124;
+      --muted: #636363;
+      --line: #d9d4c7;
+      --paper: #fffdf7;
+      --band: #f3f7f2;
+      --accent: #2f6f5e;
+      --accent-2: #8a3d2c;
+      --gold: #bd8b2c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #ece8dd;
+      color: var(--ink);
+      font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    a { color: var(--accent); }
+    .hero {
+      min-height: 58vh;
+      padding: 48px 22px;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(180deg, rgba(22, 24, 21, .20), rgba(22, 24, 21, .76)),
+        url("фотографии/01_suzdal_kremlin.jpg") center/cover;
+      color: white;
+    }
+    .hero-inner, main { width: min(1040px, 100%); margin: 0 auto; }
+    h1 {
+      max-width: 900px;
+      margin: 0 0 12px;
+      font-size: clamp(36px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      max-width: 760px;
+      margin: 0;
+      font-size: 21px;
+      color: rgba(255,255,255,.92);
+    }
+    main {
+      background: var(--paper);
+      padding: 32px 22px 56px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 4px 0 28px;
+    }
+    nav a {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 12px;
+      text-decoration: none;
+      background: white;
+      color: var(--ink);
+      font-size: 15px;
+    }
+    section {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+    }
+    h2 {
+      margin: 0 0 18px;
+      color: var(--accent);
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 21px;
+      color: var(--accent-2);
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 22px; }
+    li { margin: 7px 0; }
+    .lead {
+      font-size: 19px;
+      color: #343434;
+      max-width: 880px;
+    }
+    .note {
+      background: var(--band);
+      border-left: 5px solid var(--accent);
+      padding: 16px 18px;
+      margin: 18px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .day {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #eee7d8;
+    }
+    .time {
+      font-weight: 750;
+      color: var(--gold);
+      white-space: nowrap;
+    }
+    .where {
+      font-weight: 750;
+      margin-bottom: 4px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .item {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .item strong { color: var(--accent-2); }
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    figure {
+      margin: 0;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    figure img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      background: #ddd;
+    }
+    figcaption {
+      padding: 9px 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .print {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .hero { min-height: 48vh; padding: 34px 18px; }
+      main { padding: 24px 18px 44px; }
+      .day { grid-template-columns: 1fr; gap: 4px; }
+      .time { white-space: normal; }
+    }
+    @media print {
+      body { background: white; font-size: 12pt; }
+      .hero { min-height: auto; color: var(--ink); background: none; padding: 0 0 18px; }
+      .subtitle { color: var(--ink); }
+      main { width: auto; padding: 0; }
+      nav, .print, .photos { display: none; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Москва - Суздаль</h1>
+      <p class="subtitle">15-17 мая 2026. Выезд из Москвы около 9:00, маршрут через Владимир, Боголюбово и Кидекшу, с едой, проживанием для 8 человек и вечерними развлечениями.</p>
+      <a class="print" href="javascript:window.print()">Распечатать или сохранить PDF</a>
+    </div>
+  </header>
+
+  <main>
+    <nav>
+      <a href="#before">Перед поездкой</a>
+      <a href="#day1">15 мая</a>
+      <a href="#day2">16 мая</a>
+      <a href="#day3">17 мая</a>
+      <a href="#stay">Где жить</a>
+      <a href="#food">Где есть</a>
+      <a href="#fun">Развлечения</a>
+      <a href="#photos">Фото</a>
+    </nav>
+
+    <section id="before">
+      <h2>Перед Поездкой</h2>
+      <p class="lead">Туда лучше выехать из Москвы около 9 утра, сделать компактный Владимир и Боголюбово, в Суздале ходить пешком, обратно выехать через Кидекшу. Даты: пятница 15 мая - воскресенье 17 мая 2026.</p>
+      <div class="note">
+        <p>Заявка в ресторан "Огурец" уже отправлена на 16 мая 2026, 8 человек, на имя Александр, желаемое время 19:30. Бронь станет окончательной после ответа ресторана.</p>
+      </div>
+      <ul>
+        <li>За 3-5 дней проверить часы Владимиро-Суздальского музея-заповедника: <a href="https://vladmuseum.ru/ru/posetitelyam/times/">vladmuseum.ru</a>.</li>
+        <li>Если хотите закрыть три главных музейных комплекса, удобен единый билет: Кремль, Музей деревянного зодчества, Спасо-Евфимиев монастырь.</li>
+        <li>В Суздале машина нужна мало: центр удобнее пройти пешком, парковку лучше держать у гостиницы или у больших музейных зон.</li>
+        <li>По дороге из Москвы включить навигатор утром: платные участки М-12/ЦКАД часто быстрее, М-7 бесплатнее, но чаще собирает пробки.</li>
+      </ul>
+    </section>
+
+    <section id="day1">
+      <h2>15 Мая, Пятница</h2>
+      <div class="day"><div class="time">09:00</div><div><div class="where">Выезд из Москвы</div><p>При таком старте Владимир смотрим компактно, без длинного музейного блока. Закладывайте 3-4 часа чистой дороги плюс пятничный трафик.</p></div></div>
+      <div class="day"><div class="time">12:30 - 13:30</div><div><div class="where">Обед во Владимире</div><p>Рекомендация: "Пшеничный Кот" в центре. Удобен для спокойного обеда и десертов.</p></div></div>
+      <div class="day"><div class="time">13:30 - 14:45</div><div><div class="where">Владимир, короткий исторический центр</div><p>Золотые ворота, Георгиевская улица, смотровые площадки, Успенский собор, Дмитриевский собор, Соборная площадь. Водонапорную башню оставить только если есть силы и время.</p></div></div>
+      <div class="day"><div class="time">15:10 - 16:30</div><div><div class="where">Боголюбово и Покрова на Нерли</div><p>От парковки идти около 1,5 км по лугу. Это одна из самых красивых остановок маршрута, особенно при мягком майском свете.</p></div></div>
+      <div class="day"><div class="time">16:30 - 17:20</div><div><div class="where">Переезд в Суздаль</div><p>Без спешки въехать в город и оставить машины у жилья.</p></div></div>
+      <div class="day"><div class="time">17:20 - 18:20</div><div><div class="where">Заселение и пауза</div><p>Коротко выдохнуть после дороги.</p></div></div>
+      <div class="day"><div class="time">18:20 - 19:20</div><div><div class="where">Первый круг по Суздалю</div><p>Торговые ряды, Кремлевская улица, берег Каменки, виды на Ильинский луг и вечерние фото у Кремля.</p></div></div>
+      <div class="day"><div class="time">19:30</div><div><div class="where">Ужин</div><p>Варианты: "Лепота" или "Гостиный двор", так как "Огурец" запрошен на 16 мая.</p></div></div>
+      <div class="day"><div class="time">21:00 - 23:30</div><div><div class="where">Легкий вечер</div><p>Дегустационный зал медовухи или караоке в ГТК "Суздаль".</p></div></div>
+    </section>
+
+    <section id="day2">
+      <h2>16 Мая, Суббота</h2>
+      <div class="day"><div class="time">09:00 - 10:00</div><div><div class="where">Завтрак</div><p>Если не включен в гостинице: "Гнездо Пекаря", ул. Ленина, 63а.</p></div></div>
+      <div class="day"><div class="time">10:00 - 12:30</div><div><div class="where">Суздальский кремль</div><p>Территория Кремля, Рождественский собор, Архиерейские палаты, Никольская деревянная церковь.</p></div></div>
+      <div class="day"><div class="time">12:45 - 13:45</div><div><div class="where">Обед</div><p>"Трапезная" в Кремле, ул. Кремлевская, 12: удобно между Кремлем и Музеем деревянного зодчества.</p></div></div>
+      <div class="day"><div class="time">14:00 - 16:00</div><div><div class="where">Музей деревянного зодчества</div><p>Мельницы, деревянные церкви, крестьянские дома, амбары на сваях, виды на Каменку.</p></div></div>
+      <div class="day"><div class="time">16:15 - 17:30</div><div><div class="where">Покровский монастырь</div><p>Спокойное и фотогеничное место после музея под открытым небом.</p></div></div>
+      <div class="day"><div class="time">18:00 - 19:00</div><div><div class="where">Пауза в отеле</div><p>Перед ужином лучше не геройствовать: день плотный.</p></div></div>
+      <div class="day"><div class="time">19:30</div><div><div class="where">Ужин в "Огурце"</div><p>Заявка отправлена: 8 человек, Александр. Если ресторан ответит другим временем, маршрут легко сдвинуть на 30-60 минут.</p></div></div>
+      <div class="day"><div class="time">21:30</div><div><div class="where">Вечерние развлечения</div><p>Баня в "Пушкарской слободе" или городские бани, караоке/боулинг/бильярд в ГТК, либо спокойная прогулка по подсвеченному центру.</p></div></div>
+    </section>
+
+    <section id="day3">
+      <h2>17 Мая, Воскресенье</h2>
+      <div class="day"><div class="time">09:00 - 11:45</div><div><div class="where">Спасо-Евфимиев монастырь</div><p>Стены и башни, Спасо-Преображенский собор, звонница, аптекарский огород, музейные экспозиции.</p></div></div>
+      <div class="day"><div class="time">12:00 - 13:00</div><div><div class="where">Обед</div><p>"Гостиный двор" или "Гнездо Пекаря", если нужно быстро остаться у ул. Ленина.</p></div></div>
+      <div class="day"><div class="time">13:15 - 14:15</div><div><div class="where">Ризоположенский монастырь</div><p>Если открыт подъем, Преподобенская колокольня дает отличный финальный вид на Суздаль.</p></div></div>
+      <div class="day"><div class="time">14:30 - 15:15</div><div><div class="where">Кидекша</div><p>Церковь Бориса и Глеба - важный белокаменный памятник домонгольской архитектуры.</p></div></div>
+      <div class="day"><div class="time">15:15</div><div><div class="where">Выезд в Москву</div><p>Ориентир прибытия: 19:00-21:00, в зависимости от пробок и платных участков.</p></div></div>
+    </section>
+
+    <section id="stay">
+      <h2>Где Жить Восьмерым</h2>
+      <p>Tripadvisor на запрос 15-17 мая 2026, 8 взрослых, 4 комнаты, Суздаль не вернул доступных вариантов, поэтому лучше смотреть дома и коттеджи напрямую. Приоритет: один дом на 8-10 человек, кухня/гостиная, парковка, баня или мангал.</p>
+      <div class="grid">
+        <div class="item"><strong>Усадьба "Желтые Звезды"</strong><br>Дом с 3 спальнями до 8 человек, 90 м², три санузла, общая кухня/обеденная зона. Пешком до нескольких монастырей, есть парковка, беседки, мангалы и баня. <a href="https://yellowstarsinn.ru/">Сайт</a></div>
+        <div class="item"><strong>"У Ольги"</strong><br>Отдельный коттедж с баней: 10 спальных мест, 5 кроватей, 5 минут на машине до центра или 15-20 минут пешком. На сайте для 8 человек в пятницу-воскресенье указано 15 000 руб./сутки. <a href="https://xn--80adfbgj4adr6aw.xn--p1ai/">Сайт</a></div>
+        <div class="item"><strong>"Суздаль Терем"</strong><br>Весь дом на 10 человек, общая кухня, бесплатная парковка, баня/сауна и бассейн с прохладной водой. Хорошо для общих вечеров. <a href="https://www.suzdalterem.ru/">Сайт</a></div>
+        <div class="item"><strong>"Дымов Дача" / "Суздаль Дом"</strong><br>Стильные гостевые дома в центре Суздаля, консьерж, утренний сервис, кейтеринг и банные программы для отдельных домов. Нужно подобрать конкретный дом по датам. <a href="https://dymov-dacha.ru/">Сайт</a></div>
+        <div class="item"><strong>Дом с баней на Suzdal Online</strong><br>Деревянный дом на 8 человек, сдается полностью; сад, русская баня, барбекю-зона на 8 мест, завтраки включены. Проверить актуальность обязательно. <a href="https://www.suzdalonline.ru/hotels/bathhouse/">Сайт</a></div>
+        <div class="item"><strong>Эко-отель "ВеЛес"</strong><br>Загородный курортный вариант: в прайсе на май 2026 есть коттедж "Запольский" до 8 человек за 110 000 руб. минимум на 2 суток, с завтраком, бассейном и саунами. <a href="https://www.velesclub.ru/wp-content/uploads/2023/07/price_may2026.pdf">Прайс</a></div>
+      </div>
+      <div class="note">
+        <p>Мой короткий выбор: "Желтые Звезды" для центра и комфорта ровно на 8, "У Ольги" для отдельного дома с баней и разумной ценой, "Дымов Дача" для красивого сервисного варианта.</p>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>Где Есть</h2>
+      <div class="grid">
+        <div class="item"><strong>Огурец</strong><br>Суздаль, ул. Ленина, 121. Фермерская русская кухня. Главный ужин 16 мая, заявка на бронь отправлена.</div>
+        <div class="item"><strong>Гнездо Пекаря</strong><br>Суздаль, ул. Ленина, 63а. Завтрак/ужин, выпечка, маленький зал.</div>
+        <div class="item"><strong>Гостиный двор</strong><br>Суздаль, ул. Ленина, 63А. Удобно у Торговых рядов, русская кухня.</div>
+        <div class="item"><strong>Трапезная в Кремле</strong><br>Суздаль, ул. Кремлевская, 12. Логичный обед в музейный день.</div>
+        <div class="item"><strong>Лепота</strong><br>Суздаль, ул. Ленина, 45 к1. Вечернее настроение, живая музыка.</div>
+        <div class="item"><strong>Пшеничный Кот</strong><br>Владимир, Большая Московская, 19. Удобный обед в центре.</div>
+      </div>
+    </section>
+
+    <section id="fun">
+      <h2>Веселое И Вечернее</h2>
+      <ul>
+        <li><a href="https://medovukha-suzdal.ru/">Дегустационный зал Суздальской медовухи</a></li>
+        <li><a href="https://gtksuzdal.ru/uslugi/">Караоке, боулинг, бильярд, SUP и другие активности ГТК "Суздаль"</a></li>
+        <li><a href="https://www.pushkarka.ru/spa/rusbanya/">Русская баня в "Пушкарской слободе"</a></li>
+        <li><a href="https://suzdalbani.ru/">Городские Суздальские бани</a></li>
+        <li><a href="https://kvadrosuzdal.orgs.biz/">Квадроциклы по окрестностям</a></li>
+      </ul>
+    </section>
+
+    <section id="photos">
+      <h2>Фотографии</h2>
+      <p>Все изображения лежат рядом с этим файлом: папки <code>фотографии</code> и <code>развлечения</code>. Источники сохранены в <code>источники_фото.tsv</code>.</p>
+      <div class="photos">
+        <figure><img src="фотографии/09_pokrova_na_nerli.jpg" alt="Покрова на Нерли"><figcaption>Покрова на Нерли</figcaption></figure>
+        <figure><img src="фотографии/02_wooden_architecture_windmills.jpg" alt="Музей деревянного зодчества"><figcaption>Музей деревянного зодчества</figcaption></figure>
+        <figure><img src="фотографии/03_spaso_evfimiev_monastery.jpg" alt="Спасо-Евфимиев монастырь"><figcaption>Спасо-Евфимиев монастырь</figcaption></figure>
+        <figure><img src="фотографии/07_kamenka_river_suzdal.jpg" alt="Каменка"><figcaption>Каменка</figcaption></figure>
+        <figure><img src="фотографии/10_golden_gate_vladimir.jpg" alt="Золотые ворота"><figcaption>Золотые ворота во Владимире</figcaption></figure>
+        <figure><img src="развлечения/02_suzdal_mead.jpg" alt="Медовуха"><figcaption>Медовуха и вечерние идеи</figcaption></figure>
+      </div>
+    </section>
+    <section id="qr">
+      <h2>QR-Код</h2>
+      <p>Отсканируйте, чтобы открыть этот маршрут на телефоне.</p>
+      <figure style="max-width:360px">
+        <img src="qr-suzdal-route.png" alt="QR-код маршрута Москва - Суздаль" style="aspect-ratio:auto; object-fit:contain">
+        <figcaption>Ссылка на сайт маршрута</figcaption>
+      </figure>
+    </section>
+
+  </main>
+</body>
+</html>
